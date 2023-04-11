@@ -524,7 +524,7 @@ DietSeurat <- function(
       layers <- if (isTRUE(x = dep.args[[lyr]])) {
         c(layers, lyr)
       } else {
-        Filter(f = \(x) x != lyr, x = layers)
+        Filter(f = (x != lyr), x = layers)
       }
     }
   }
